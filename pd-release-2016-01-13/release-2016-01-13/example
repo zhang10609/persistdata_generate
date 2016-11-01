@@ -1,0 +1,2 @@
+mkpdimg.exe -sn a557806f -wifi_mac 00:50:43:df:4f:d2 -bt_mac 00:50:43:fd:9c:96 -o pd.img
+mkpdimg.exe -sn a557806f -wifi_mac_no_check 01:02:03:df:4f:d2 -bt_mac_no_check 04:05:06:fd:9c:96 -o pd.img

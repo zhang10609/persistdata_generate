@@ -1,0 +1,17 @@
+@echo off
+
+set SPARSE_TOOL=mkpdimg.exe
+set SN=%%2
+set WIFI_MAC=%%4
+set BT_MAC=%%6
+set ZB_MAC=%%8
+
+if not exist %SPARSE_TOOL% (
+	echo "mkpdimg.exe not exist!"
+	pause
+	exit
+)
+
+%SPARSE_TOOL% -sn %SN% -wifi_mac %WIFI_MAC% -bt_mac %BT_MAC% -zb_mac %ZB_MAC5 -o %10%
+
+fastboot flash persistdata persistdata.img
